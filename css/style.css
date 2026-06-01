@@ -1,0 +1,220 @@
+/* ====== BASE ====== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b0b0b;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* ====== HERO (FUNDO COM IMAGEM) ====== */
+.bg-main-hero {
+  /* O gradiente escurece a foto para os textos brancos lerem-se bem */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/fundo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+  width: 100%;
+}
+
+/* ====== RESTO DO CONTEÚDO (PRETO) ====== */
+.bg-black-content {
+  background-color: #0b0b0b;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* ====== PESQUISA ESTILO STANDVIRTUAL ====== */
+.search-container-stand {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.search-tabs-stand {
+  display: flex;
+  gap: 5px;
+}
+
+.tab-btn-stand {
+  background: #111; /* Fundo escuro para abas não selecionadas */
+  border: none;
+  padding: 15px 35px;
+  font-weight: 700;
+  color: #999;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: 0.3s;
+  border-top: 3px solid transparent; /* Espaço reservado para a linha */
+}
+
+/* ESTADO ATIVO: A LINHA LARANJA */
+.tab-btn-stand.active {
+  background: #000;
+  color: #ffae00;
+  border-top: 3px solid #ffae00; /* Linha laranja superior */
+}
+
+.search-card-stand {
+  background: #000;
+  padding: 30px;
+  border-radius: 0 12px 12px 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid #222;
+}
+
+.label-stand {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.select-stand {
+  height: 48px !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  color: #333 !important;
+  background-color: white !important;
+}
+
+.btn-stand-red {
+  background-color: #ffae00 !important;
+  color: black !important;
+  border: none !important;
+  padding: 12px 45px !important;
+  border-radius: 8px !important;
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.btn-stand-red:hover {
+  background-color: #e69d00 !important;
+  transform: translateY(-2px);
+}
+
+.adv-link-stand {
+  color: #ffae00;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* ====== CARDS DE CARROS ====== */
+.car-card {
+  background: #151515;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+  border: 1px solid #222;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.car-brand {
+  color: #ffb027;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+  margin: 0;
+}
+
+.car-title {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  font-weight: 700;
+}
+
+.car-subtitle {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.card-btn {
+  width: 100%;
+  background: #ffb027;
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-weight: 800;
+}
+
+.badge-premium {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffb027;
+  color: #000;
+  padding: 3px 10px;
+  font-size: 10px;
+  font-weight: 800;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+/* ====== EVENTOS ====== */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  background: #151515;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  border: 1px solid #222;
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-card h2 {
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 0;
+}
+
+.news-card p {
+  padding: 0 15px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.news-card a {
+  padding: 0 15px;
+  color: #ffb027;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-ver-todos {
+  display: inline-block;
+  background-color: #ffb027;
+  color: #000;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+}
